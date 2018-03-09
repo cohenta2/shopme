@@ -8,8 +8,24 @@
 
 import UIKit
 
-class CategoryViewController: UITableViewController {
+class Item {
+    var itemImage: UIImage
+    var itemName: String
+    var itemPrice: Float
+    var itemDescription: String
+    
+    init(img: UIImage, name: String, price: Float, desc: String) {
+        itemImage = img
+        itemName = name
+        itemPrice = price
+        itemDescription = desc
+    }
+}
 
+class CategoryViewController: UITableViewController {
+    
+    var allItems = [Item]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,12 +45,12 @@ class CategoryViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return allItems.count
     }
 
     /*
@@ -91,5 +107,16 @@ class CategoryViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func make_grocery() {
+        allItems.append(Item(img: UIImage(named: "grocery-1-tomatoes")!, name: "Tomatoes, per lb", price: 2.45, desc: "Freshly picked"))
+        allItems.append(Item(img: UIImage(named: "grocery-2-bananas")!, name: "Banana, per lb", price: 1.50, desc: "Not bruised!"))
+        allItems.append(Item(img: UIImage(named: "grocery-3-gala")!, name: "Apple", price: 1.00, desc: "So sweet"))
+        allItems.append(Item(img: UIImage(named: "grocery-4-lettuce")!, name: "Lettuce", price: 2.00, desc: "Lettuce be friends"))
+        allItems.append(Item(img: UIImage(named: "grocery-5-broccoli")!, name: "Brocooli", price: 3.30, desc: "I'm a little tree"))
+        allItems.append(Item(img: UIImage(named: "grocery-6-milk")!, name: "Milk", price: 3.50, desc: "Got me?"))
+        allItems.append(Item(img: UIImage(named: "grocery-7-bread")!, name: "Bread", price: 3.10, desc: "Artisan"))
+        allItems.append(Item(img: UIImage(named: "grocery-8-tomatoes")!, name: "Eggs", price: 1.90, desc: "What came first?"))
+    }
 
 }
