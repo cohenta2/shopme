@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		CBB289B620521AF4002CE748 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB289B520521AF4002CE748 /* AppDelegate.swift */; };
-		CBB289B820521AF4002CE748 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB289B720521AF4002CE748 /* ViewController.swift */; };
 		CBB289BB20521AF4002CE748 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB289B920521AF4002CE748 /* Main.storyboard */; };
 		CBB289BD20521AF4002CE748 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBB289BC20521AF4002CE748 /* Assets.xcassets */; };
 		CBB289C020521AF4002CE748 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB289BE20521AF4002CE748 /* LaunchScreen.storyboard */; };
 		CBB289CB20521AF4002CE748 /* ShopMETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB289CA20521AF4002CE748 /* ShopMETests.swift */; };
 		CBB289D620521AF4002CE748 /* ShopMEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB289D520521AF4002CE748 /* ShopMEUITests.swift */; };
+		CBB289E420521CFF002CE748 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB289E320521CFF002CE748 /* CategoriesViewController.swift */; };
+		CBB289E620522099002CE748 /* CategoryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB289E520522099002CE748 /* CategoryViewCell.swift */; };
+		CBB289E820522754002CE748 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB289E720522754002CE748 /* CategoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		CBB289B220521AF4002CE748 /* ShopME.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopME.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBB289B520521AF4002CE748 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CBB289B720521AF4002CE748 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CBB289BA20521AF4002CE748 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CBB289BC20521AF4002CE748 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBB289BF20521AF4002CE748 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		CBB289D120521AF4002CE748 /* ShopMEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShopMEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBB289D520521AF4002CE748 /* ShopMEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopMEUITests.swift; sourceTree = "<group>"; };
 		CBB289D720521AF4002CE748 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBB289E320521CFF002CE748 /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
+		CBB289E520522099002CE748 /* CategoryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewCell.swift; sourceTree = "<group>"; };
+		CBB289E720522754002CE748 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,9 +102,11 @@
 			isa = PBXGroup;
 			children = (
 				CBB289B520521AF4002CE748 /* AppDelegate.swift */,
-				CBB289B720521AF4002CE748 /* ViewController.swift */,
 				CBB289B920521AF4002CE748 /* Main.storyboard */,
+				CBB289E720522754002CE748 /* CategoryViewController.swift */,
+				CBB289E320521CFF002CE748 /* CategoriesViewController.swift */,
 				CBB289BC20521AF4002CE748 /* Assets.xcassets */,
+				CBB289E520522099002CE748 /* CategoryViewCell.swift */,
 				CBB289BE20521AF4002CE748 /* LaunchScreen.storyboard */,
 				CBB289C120521AF4002CE748 /* Info.plist */,
 			);
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBB289B820521AF4002CE748 /* ViewController.swift in Sources */,
+				CBB289E820522754002CE748 /* CategoryViewController.swift in Sources */,
 				CBB289B620521AF4002CE748 /* AppDelegate.swift in Sources */,
+				CBB289E620522099002CE748 /* CategoryViewCell.swift in Sources */,
+				CBB289E420521CFF002CE748 /* CategoriesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
