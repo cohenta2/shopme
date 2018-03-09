@@ -16,6 +16,7 @@
 		CBB289E420521CFF002CE748 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB289E320521CFF002CE748 /* CategoriesViewController.swift */; };
 		CBB289E620522099002CE748 /* CategoryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB289E520522099002CE748 /* CategoryViewCell.swift */; };
 		CBB289E820522754002CE748 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB289E720522754002CE748 /* CategoryViewController.swift */; };
+		CBB289EA2052317B002CE748 /* ItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB289E92052317B002CE748 /* ItemViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		CBB289E320521CFF002CE748 /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
 		CBB289E520522099002CE748 /* CategoryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewCell.swift; sourceTree = "<group>"; };
 		CBB289E720522754002CE748 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		CBB289E92052317B002CE748 /* ItemViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				CBB289E720522754002CE748 /* CategoryViewController.swift */,
 				CBB289E320521CFF002CE748 /* CategoriesViewController.swift */,
 				CBB289BC20521AF4002CE748 /* Assets.xcassets */,
+				CBB289E92052317B002CE748 /* ItemViewCell.swift */,
 				CBB289E520522099002CE748 /* CategoryViewCell.swift */,
 				CBB289BE20521AF4002CE748 /* LaunchScreen.storyboard */,
 				CBB289C120521AF4002CE748 /* Info.plist */,
@@ -265,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBB289EA2052317B002CE748 /* ItemViewCell.swift in Sources */,
 				CBB289E820522754002CE748 /* CategoryViewController.swift in Sources */,
 				CBB289B620521AF4002CE748 /* AppDelegate.swift in Sources */,
 				CBB289E620522099002CE748 /* CategoryViewCell.swift in Sources */,

@@ -25,9 +25,11 @@ class Item {
 class CategoryViewController: UITableViewController {
     
     var allItems = [Item]()
+    var categoryIndex: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        make_grocery()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -53,15 +55,20 @@ class CategoryViewController: UITableViewController {
         return allItems.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "item", for: indexPath) as? ItemViewCell {
+            cell.itemImage.image = allItems[indexPath.item].itemImage
+            cell.itemName.text = allItems[indexPath.item].itemName
+            cell.itemDescription.text = allItems[indexPath.item].itemDescription
+            cell.itemPrice.text = "$" + String(allItems[indexPath.item].itemPrice)
+            return cell
+        }
 
-        // Configure the cell...
 
-        return cell
+        return UITableViewCell()
     }
-    */
+ 
 
     /*
     // Override to support conditional editing of the table view.

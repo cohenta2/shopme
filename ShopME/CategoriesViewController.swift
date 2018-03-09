@@ -48,14 +48,20 @@ class CategoriesViewController: UICollectionViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
-        if segue.identifier == "categories" {
+        if segue.identifier == "toTableSegue" {
             if let tvc = segue.destination as? CategoryViewController {
-                
+                tvc.categoryIndex = (sender as? Int)!
             }
         }
     }
- 
 
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let selectedIndex = indexPath.item
+        self.performSegue(withIdentifier: "toTableSegue", sender: selectedIndex)
+    }
+ 
+    
     // MARK: UICollectionViewDataSource
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
