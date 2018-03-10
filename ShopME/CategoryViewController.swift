@@ -29,8 +29,7 @@ class CategoryViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        make_grocery()
-
+        determine_category(index: categoryIndex)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -115,6 +114,48 @@ class CategoryViewController: UITableViewController {
     }
     */
     
+    func determine_category(index: Int) {
+        if index == 0 {
+            return
+        }
+        else if index == 1 {
+            return
+        }
+        else if index == 2 {
+            make_grocery()
+            return
+        }
+        else if index == 3 {
+            make_clothing()
+            return
+        }
+        else if index == 4 {
+            make_movies()
+            return
+        }
+        else if index == 5 {
+            make_garden()
+            return
+        }
+        else if index == 6 {
+            make_electronics()
+            return
+        }
+        else if index == 7 {
+            make_books()
+            return
+        }
+        else if index == 8 {
+            make_appliances()
+            return
+            
+        }
+        else if index == 9 {
+            make_toys()
+            return
+        }
+    }
+    
     func make_grocery() {
         allItems.append(Item(img: UIImage(named: "grocery-1-tomatoes")!, name: "Tomatoes, per lb", price: 2.45, desc: "Freshly picked"))
         allItems.append(Item(img: UIImage(named: "grocery-2-bananas")!, name: "Banana, per lb", price: 1.50, desc: "Not bruised!"))
@@ -123,7 +164,40 @@ class CategoryViewController: UITableViewController {
         allItems.append(Item(img: UIImage(named: "grocery-5-broccoli")!, name: "Brocooli", price: 3.30, desc: "I'm a little tree"))
         allItems.append(Item(img: UIImage(named: "grocery-6-milk")!, name: "Milk", price: 3.50, desc: "Got me?"))
         allItems.append(Item(img: UIImage(named: "grocery-7-bread")!, name: "Bread", price: 3.10, desc: "Artisan"))
-        allItems.append(Item(img: UIImage(named: "grocery-8-tomatoes")!, name: "Eggs", price: 1.90, desc: "What came first?"))
+        allItems.append(Item(img: UIImage(named: "grocery-8-eggs")!, name: "Eggs", price: 1.90, desc: "What came first?"))
+    }
+    
+    func make_clothing() {
+        
+    }
+    
+    func make_movies() {
+        
+    }
+    
+    func make_garden() {
+        allItems.append(Item(img: UIImage(named: "garden-1-shovel")!, name: "Shovel", price: 10.00, desc: "Garden use only"))
+        allItems.append(Item(img: UIImage(named: "garden-2-tomato-plant")!, name: "Tomato Plant", price: 2.13, desc: "Planting made easy"))
+        allItems.append(Item(img: UIImage(named: "garden-3-mower")!, name: "Mower", price: 99.99, desc: "Wear shoes!"))
+        allItems.append(Item(img: UIImage(named: "garden-4-garden-soil")!, name: "Garden Soil", price: 9.99, desc: "Dirt don't hurt."))
+        allItems.append(Item(img: UIImage(named: "garden-5-fruit-tree")!, name: "Fruit Tree", price: 5.99, desc: "Mystery fruit inside"))
+        allItems.append(Item(img: UIImage(named: "garden-6-leaves-rake")!, name: "Rake", price: 6.50, desc: "For making your yard tidy"))
+    }
+    
+    func make_electronics() {
+        
+    }
+    
+    func make_books() {
+        
+    }
+    
+    func make_appliances() {
+        
+    }
+    
+    func make_toys() {
+        
     }
 
 }

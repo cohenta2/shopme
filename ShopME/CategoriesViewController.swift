@@ -50,15 +50,16 @@ class CategoriesViewController: UICollectionViewController {
         // Pass the selected object to the new view controller.
         if segue.identifier == "toTableSegue" {
             if let tvc = segue.destination as? CategoryViewController {
-                tvc.categoryIndex = (sender as? Int)!
+                if let index = sender as? Int {
+                    tvc.categoryIndex = index
+                }
             }
         }
     }
 
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let selectedIndex = indexPath.item
-        self.performSegue(withIdentifier: "toTableSegue", sender: selectedIndex)
+        self.performSegue(withIdentifier: "toTableSegue", sender: indexPath.item)
     }
  
     
@@ -79,6 +80,7 @@ class CategoriesViewController: UICollectionViewController {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? CategoryViewCell {
             cell.categoryLabel.text = allCategories[indexPath.item].categoryName
             cell.categoryImageView.image = allCategories[indexPath.item].categoryImage
+
             return cell
         }
         return UICollectionViewCell()
