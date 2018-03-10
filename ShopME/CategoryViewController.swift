@@ -168,11 +168,19 @@ class CategoryViewController: UITableViewController {
     }
     
     func make_clothing() {
-        
+        allItems.append(Item(img: UIImage(named: "clothing-1-shirt")!, name: "Shirt", price: 3.33, desc: "Stylish"))
+        allItems.append(Item(img: UIImage(named: "clothing-2-socks")!, name: "Socks", price: 4.49, desc: "Cotton"))
+        allItems.append(Item(img: UIImage(named: "clothing-3-ski-bib")!, name: "Ski Bib", price: 45.99, desc: "Keep your butt dry"))
+        allItems.append(Item(img: UIImage(named: "clothing-4-beanie")!, name: "Beanie", price: 4.59, desc: "Be the hipster you wanted to be"))
+        allItems.append(Item(img: UIImage(named: "clothing-5-gloves")!, name: "Gloves", price: 5.60, desc: "One size fits all"))
     }
     
     func make_movies() {
-        
+        allItems.append(Item(img: UIImage(named: "movies-1-shawshank")!, name: "The Shawshank Redemption", price: 9.99, desc: "An epic starring Tim Robbins and Morgan Freeman"))
+        allItems.append(Item(img: UIImage(named: "movies-2-lord-of-the-rings")!, name: "Lord of the Rings", price: 9.99, desc: "A mythical journey starring elves, dwarves, and orcs oh my"))
+        allItems.append(Item(img: UIImage(named: "movies-3-godfather")!, name: "The Godfather", price: 9.99, desc: "Say hello to my  little...wait wrong movie"))
+        allItems.append(Item(img: UIImage(named: "movies-4-baby-driver")!, name: "Baby Driver", price: 9.99, desc: "Music, Car chases, and adrenaline"))
+        allItems.append(Item(img: UIImage(named: "movies-5-pulp-fiction")!, name: "Pulp Fiction", price: 9.99, desc: "Say what again"))
     }
     
     func make_garden() {
@@ -185,19 +193,35 @@ class CategoryViewController: UITableViewController {
     }
     
     func make_electronics() {
-        
+        allItems.append(Item(img: UIImage(named: "electronics-1-iphone")!, name: "iPhone", price: 299.99, desc: "The most wonderful invention of all time.  This is not biased"))
+        allItems.append(Item(img: UIImage(named: "electronics-2-apple-watch")!, name: "Apple Watch", price: 299.99, desc: "The future on your wrist"))
+        allItems.append(Item(img: UIImage(named: "electronics-3-amazon-echo")!, name: "Amazon Echo", price: 99.99, desc: "Weild the power of Alexa"))
+        allItems.append(Item(img: UIImage(named: "electronics-4-thinkpad")!, name: "ThinkPad", price: 350.99, desc: "A well made laptop that you will eventually put linux on"))
+        allItems.append(Item(img: UIImage(named: "electronics-5-xbox-one")!, name: "Xbox One", price: 499.99, desc: "Don't buy this"))
     }
     
     func make_books() {
-        
+        allItems.append(Item(img: UIImage(named: "books-1-a-game-of-thrones")!, name: "A Game of Thrones", price: 5.99, desc: "The book that started the HBO cultural phenomenon"))
+        allItems.append(Item(img: UIImage(named: "books-2-harry-potter")!, name: "Harry Potter", price: 6.99, desc: "You're a wizard Arry"))
+        allItems.append(Item(img: UIImage(named: "books-3-the-hobbit")!, name: "The Hobbit", price: 7.99, desc: "A care-free adventure by Tolkien"))
+        allItems.append(Item(img: UIImage(named: "books-4-animal-farm")!, name: "Animal Farm", price: 8.99, desc: "Poor Boxer"))
+        allItems.append(Item(img: UIImage(named: "books-5-lord-of-the-flies")!, name: "Lord of the Flies", price: 3.99, desc: "I never read this book"))
     }
     
     func make_appliances() {
-        
+        allItems.append(Item(img: UIImage(named: "appliances-1-coffee-maker")!, name: "Coffee Maker", price: 10.99, desc: "Treat yourself"))
+        allItems.append(Item(img: UIImage(named: "appliances-2-blender")!, name: "Blender", price: 12.99, desc: "Milk Shakes for days"))
+        allItems.append(Item(img: UIImage(named: "appliances-3-toaster")!, name: "Toaster", price: 6.99, desc: "The best thing since sliced bread"))
+        allItems.append(Item(img: UIImage(named: "appliances-4-dishwasher")!, name: "Dishwasher", price: 220.99, desc: "Because we all want to be lazy"))
+        allItems.append(Item(img: UIImage(named: "appliances-5-microwave")!, name: "Microwave", price: 60.99, desc: "For reheating leftovers"))
     }
     
     func make_toys() {
-        
+        allItems.append(Item(img: UIImage(named: "toys-1-action-figure")!, name: "Spiderman Action Figure", price: 15.99, desc: "With Web Slinging Action!"))
+        allItems.append(Item(img: UIImage(named: "toys-2-legos")!, name: "Legos", price: 20.99, desc: "A barefoot's worst nightmare"))
+        allItems.append(Item(img: UIImage(named: "toys-3-hot-wheels")!, name: "Hot Wheels", price: 9.99, desc: "Overpriced toy cars"))
+        allItems.append(Item(img: UIImage(named: "toys-4-teddy-bear")!, name: "Teddy Bear", price: 6.99, desc: "Just a teddy bear"))
+        allItems.append(Item(img: UIImage(named: "toys-5-train")!, name: "Toy Train", price: 9.99, desc: "Choo Choo"))
     }
 
 }
