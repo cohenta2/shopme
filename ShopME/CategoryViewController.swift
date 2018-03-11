@@ -30,6 +30,7 @@ class CategoryViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         determine_category(index: categoryIndex)
+        shopping_cart_button()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -115,13 +116,7 @@ class CategoryViewController: UITableViewController {
     */
     
     func determine_category(index: Int) {
-        if index == 0 {
-            return
-        }
-        else if index == 1 {
-            return
-        }
-        else if index == 2 {
+        if index == 2 {
             make_grocery()
             return
         }
@@ -154,6 +149,22 @@ class CategoryViewController: UITableViewController {
             make_toys()
             return
         }
+    }
+    func shopping_cart_button() {
+        let button = UIButton.init(type: .custom)
+        button.setImage(UIImage(named: "cart"), for: UIControlState.normal)
+        button.frame = CGRect(x: 0, y: 0, width: 35, height: 35)
+        button.titleLabel?.text = "0"
+        let label = UILabel(frame: CGRect(x: 13, y: 0, width: 50, height: 30))
+        label.text = "0"
+        button.addSubview(label)
+        let buttonView = UIView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
+        buttonView.addSubview(button)
+        buttonView.translatesAutoresizingMaskIntoConstraints = false
+        buttonView.widthAnchor.constraint(equalToConstant: 53).isActive = true
+        buttonView.heightAnchor.constraint(equalToConstant: 51).isActive = true
+        let barButton = UIBarButtonItem(customView: buttonView)
+        self.navigationItem.rightBarButtonItem = barButton
     }
     
     func make_grocery() {
@@ -222,6 +233,12 @@ class CategoryViewController: UITableViewController {
         allItems.append(Item(img: UIImage(named: "toys-3-hot-wheels")!, name: "Hot Wheels", price: 9.99, desc: "Overpriced toy cars"))
         allItems.append(Item(img: UIImage(named: "toys-4-teddy-bear")!, name: "Teddy Bear", price: 6.99, desc: "Just a teddy bear"))
         allItems.append(Item(img: UIImage(named: "toys-5-train")!, name: "Toy Train", price: 9.99, desc: "Choo Choo"))
+    }
+    
+    func add_item(sender: AnyObject) {
+        if let cell = sender.superview??.superview as? ItemViewCell {
+            
+        }
     }
 
 }

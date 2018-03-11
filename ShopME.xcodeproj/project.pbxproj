@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB41A42C2054C3A500AAF338 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB41A42B2054C3A500AAF338 /* CartViewController.swift */; };
 		CBB289B620521AF4002CE748 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB289B520521AF4002CE748 /* AppDelegate.swift */; };
 		CBB289BB20521AF4002CE748 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB289B920521AF4002CE748 /* Main.storyboard */; };
 		CBB289BD20521AF4002CE748 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBB289BC20521AF4002CE748 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB41A42B2054C3A500AAF338 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		CBB289B220521AF4002CE748 /* ShopME.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopME.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBB289B520521AF4002CE748 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBB289BA20521AF4002CE748 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 		CBB289B420521AF4002CE748 /* ShopME */ = {
 			isa = PBXGroup;
 			children = (
+				CB41A42B2054C3A500AAF338 /* CartViewController.swift */,
 				CBB289B520521AF4002CE748 /* AppDelegate.swift */,
 				CBB289B920521AF4002CE748 /* Main.storyboard */,
 				CBB289E720522754002CE748 /* CategoryViewController.swift */,
@@ -272,6 +275,7 @@
 				CBB289E820522754002CE748 /* CategoryViewController.swift in Sources */,
 				CBB289B620521AF4002CE748 /* AppDelegate.swift in Sources */,
 				CBB289E620522099002CE748 /* CategoryViewCell.swift in Sources */,
+				CB41A42C2054C3A500AAF338 /* CartViewController.swift in Sources */,
 				CBB289E420521CFF002CE748 /* CategoriesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
